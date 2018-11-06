@@ -1,4 +1,6 @@
+= Siteless
 
+It's like serverless, but for content.
 
 * link:index.html?e=assembly_about.adoc[About Siteless]
 * link:index.html?e=assembly_using.adoc[Using Siteless]
