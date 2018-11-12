@@ -25,6 +25,8 @@
         var content = "include::"+ fname + "[leveloffset=+1]";
        
 
+    const jsonObj = asciidoctor.load(content,{safe: 'server', attributes: {PRODUCT: 'BMX'}});      
+    console.log(jsonObj);
 	  const html = asciidoctor.convert(content,{safe: 'server', attributes: {PRODUCT: 'BMX'}});      
       document.getElementById('target').innerHTML = html;
 
