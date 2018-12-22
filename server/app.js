@@ -61,6 +61,7 @@ browserSync.init({
         './src/js/*.js',
         './src/less/*.less',
         './src/html/*.html',
+        './src/html/*.adoc',
         'dist/**/*'
     ]
 });

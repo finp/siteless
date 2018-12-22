@@ -57,6 +57,11 @@ module.exports = {
         //copy patternfly assets for demo app
         new CopyWebpackPlugin([
             {
+                from: { glob:'./src/html/*.adoc'},
+                to: './',
+                flatten: true
+            },
+            {
                 from: { glob:'./src/html/*.html'},
                 to: './',
                 flatten: true
