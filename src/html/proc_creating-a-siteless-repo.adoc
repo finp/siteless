@@ -7,7 +7,7 @@ To get you started, create a github pages hosted site, and edit some content.
 .Procedure
 
 . Fork or copy the link:https://github.com/finp/siteless[siteless repo].
-. Edit the `index.adoc` file, for example:
+. To avoid a *build* step, edit `dist\index.adoc` file, for example:
 +
 ----
 * link:index.html?e=1.adoc[First page]
@@ -20,6 +20,10 @@ To get you started, create a github pages hosted site, and edit some content.
 
 This is my first page.
 ----
+. To avail of PatternFly features, you edit the `src\index.adoc` and build using the instructions at
++
+https://github.com/patternfly/patternfly-demo-app
+
 . To preview locally, you need a web server, eg `npm i -g http-server`.
 . Commit your changes and push to GitHub repo.
 . In *Options*  for the repo, navigate to the *GitHub Pages* section.
