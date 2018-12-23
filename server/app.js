@@ -33,7 +33,7 @@ bundler.plugin('done', function (stats) {
  */
 browserSync.init({
     server: {
-        baseDir: 'dist',
+        baseDir: 'docs',
         logFileChanges: true,
         middleware: [
             webpackDevMiddleware(bundler, {
@@ -62,6 +62,6 @@ browserSync.init({
         './src/less/*.less',
         './src/html/*.html',
         './src/html/*.adoc',
-        'dist/**/*'
+        'docs/**/*'
     ]
 });
