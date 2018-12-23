@@ -35,7 +35,7 @@
     "build:dev": "webpack --config build/webpack.config.js",
     "build:prod": "webpack -p --config build/webpack.config.js",
     "start": "npm run build:dev && node server/app.js",
-    "clean": "rm -rf dist/*",
+    "clean": "rm -rf docs/*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

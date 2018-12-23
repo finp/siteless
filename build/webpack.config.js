@@ -18,7 +18,7 @@ module.exports = {
     },
 
     output: {
-        path: path.join(__dirname, '../dist'),
+        path: path.join(__dirname, '../docs'),
         publicPath: './',
         filename: '[name].bundle.js',
         hotUpdateChunkFilename: 'hot/[id].[hash].hot-update.js',
