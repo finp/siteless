@@ -1,12 +1,12 @@
-[id='creating-a-siteless-repo_{context}']
-= Creating a siteless repo
+[id='creating-a-arotna-repo_{context}']
+= Creating a arotna repo
 
 To get you started, create a github pages hosted site, and edit some content.
 
 
 .Procedure
 
-. Fork or copy the link:https://github.com/finp/siteless[siteless repo].
+. Fork or copy the link:https://github.com/finp/arotna[arotna repo].
 . To avoid a *build* step, edit `docs/index.adoc` file, for example:
 +
 ----
