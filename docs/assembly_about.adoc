@@ -12,9 +12,7 @@ Arotna helps you write and publish asciidoc documentation with ease.
 * you need to publish text and graphics
 * you need to work fast
 
-
-include::con_arotna.adoc[leveloffset=+1]
-
+image::arotna.png[link="index.html?e=arotna.adoc"]
 
 == Additional resources
 
