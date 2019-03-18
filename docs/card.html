@@ -10,6 +10,8 @@
 
     <!-- webpack bundled dependencies -->
     <script src="main.bundle.js"></script>
+    <script src="./asciidoctor.js"></script>  
+
   </head>
   <body class="cards-pf">
 
@@ -222,406 +224,68 @@
 
   <div class="container-fluid container-cards-pf">
     <div class="row row-cards-pf">
+
       <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
         <div data-link="details.html" class="card-pf card-pf-view card-pf-view-select card-pf-view-multi-select">
           <div class="card-pf-body">
             <div class="card-pf-top-element">
-              <span class="fa fa-birthday-cake card-pf-icon-circle"></span>
+              
             </div>
-            <h2 class="card-pf-title text-center">
-              Cake Service
-            </h2>
-            <div class="card-pf-items text-center">
-              <div class="card-pf-item">
-                <span class="pficon pficon-screen"></span>
-                <span class="card-pf-item-text">8</span>
-              </div>
-              <div class="card-pf-item">
-                <span class="fa fa-check"></span>
-              </div>
+ 
+            <div id="target">          
+              <script>
+             
+                var asciidoctor = Asciidoctor();
+                var content = "include::index.adoc[leveloffset=+1]";
+          
+          
+                 const html0 = asciidoctor.convert(content,{safe: 'server', attributes: {PRODUCT: 'BMX'}});      
+                 document.getElementById('target').innerHTML = html0;
+          
+          
+                var fname = (location.search.match(/e=(.*)/)[1]);
+               
+          
+                  var content = "include::"+ fname + "[leveloffset=+1]";
+                 
+          
+              const jsonObj = asciidoctor.load(content,{safe: 'server', attributes: {PRODUCT: 'BMX'}});      
+              console.log(jsonObj);
+              const html = asciidoctor.convert(content,{safe: 'server', attributes: {PRODUCT: 'BMX'}});      
+                document.getElementById('target').innerHTML = html;
+          
+          </script>
+          
+          
             </div>
-            <p class="card-pf-info text-center"><strong>Created On</strong> 2015-03-01 02:00 AM <br/> Never Expires</p>
+    
+                
+
           </div>
-          <div class="card-pf-view-checkbox">
-            <input type="checkbox">
-          </div>
+
+
+
+
+          
         </div>
       </div>
       <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
         <div data-link="details.html" class="card-pf card-pf-view card-pf-view-select card-pf-view-multi-select">
           <div class="card-pf-body">
             <div class="card-pf-top-element">
-              <span class="fa fa-birthday-cake card-pf-icon-circle"></span>
+              
             </div>
-            <h2 class="card-pf-title text-center">
+            <h2 >
               Cake Service
             </h2>
-            <div class="card-pf-items text-center">
-              <div class="card-pf-item">
-                <span class="pficon pficon-screen"></span>
-                <span class="card-pf-item-text">8</span>
-              </div>
-              <div class="card-pf-item">
-                <span class="fa fa-check"></span>
-              </div>
-            </div>
-            <p class="card-pf-info text-center"><strong>Created On</strong> 2015-03-01 02:00 AM <br/> Never Expires</p>
+           Testing test,
+           
           </div>
-          <div class="card-pf-view-checkbox">
-            <input type="checkbox">
-          </div>
+          
         </div>
       </div>
-      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-        <div data-link="details.html" class="card-pf card-pf-view card-pf-view-select card-pf-view-multi-select">
-          <div class="card-pf-body">
-            <div class="card-pf-top-element">
-              <span class="fa fa-birthday-cake card-pf-icon-circle"></span>
-            </div>
-            <h2 class="card-pf-title text-center">
-              Cake Service
-            </h2>
-            <div class="card-pf-items text-center">
-              <div class="card-pf-item">
-                <span class="pficon pficon-screen"></span>
-                <span class="card-pf-item-text">8</span>
-              </div>
-              <div class="card-pf-item">
-                <span class="fa fa-check"></span>
-              </div>
-            </div>
-            <p class="card-pf-info text-center"><strong>Created On</strong> 2015-03-01 02:00 AM <br/> Never Expires</p>
-          </div>
-          <div class="card-pf-view-checkbox">
-            <input type="checkbox">
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-        <div data-link="details.html" class="card-pf card-pf-view card-pf-view-select card-pf-view-multi-select">
-          <div class="card-pf-body">
-            <div class="card-pf-top-element">
-              <span class="fa fa-birthday-cake card-pf-icon-circle"></span>
-            </div>
-            <h2 class="card-pf-title text-center">
-              Cake Service
-            </h2>
-            <div class="card-pf-items text-center">
-              <div class="card-pf-item">
-                <span class="pficon pficon-screen"></span>
-                <span class="card-pf-item-text">8</span>
-              </div>
-              <div class="card-pf-item">
-                <span class="fa fa-check"></span>
-              </div>
-            </div>
-            <p class="card-pf-info text-center"><strong>Created On</strong> 2015-03-01 02:00 AM <br/> Never Expires</p>
-          </div>
-          <div class="card-pf-view-checkbox">
-            <input type="checkbox">
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-        <div data-link="details.html" class="card-pf card-pf-view card-pf-view-select card-pf-view-multi-select">
-          <div class="card-pf-body">
-            <div class="card-pf-top-element">
-              <span class="fa fa-birthday-cake card-pf-icon-circle"></span>
-            </div>
-            <h2 class="card-pf-title text-center">
-              Cake Service
-            </h2>
-            <div class="card-pf-items text-center">
-              <div class="card-pf-item">
-                <span class="pficon pficon-screen"></span>
-                <span class="card-pf-item-text">8</span>
-              </div>
-              <div class="card-pf-item">
-                <span class="fa fa-check"></span>
-              </div>
-            </div>
-            <p class="card-pf-info text-center"><strong>Created On</strong> 2015-03-01 02:00 AM <br/> Never Expires</p>
-          </div>
-          <div class="card-pf-view-checkbox">
-            <input type="checkbox">
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-        <div data-link="details.html" class="card-pf card-pf-view card-pf-view-select card-pf-view-multi-select">
-          <div class="card-pf-body">
-            <div class="card-pf-top-element">
-              <span class="fa fa-birthday-cake card-pf-icon-circle"></span>
-            </div>
-            <h2 class="card-pf-title text-center">
-              Cake Service
-            </h2>
-            <div class="card-pf-items text-center">
-              <div class="card-pf-item">
-                <span class="pficon pficon-screen"></span>
-                <span class="card-pf-item-text">8</span>
-              </div>
-              <div class="card-pf-item">
-                <span class="fa fa-check"></span>
-              </div>
-            </div>
-            <p class="card-pf-info text-center"><strong>Created On</strong> 2015-03-01 02:00 AM <br/> Never Expires</p>
-          </div>
-          <div class="card-pf-view-checkbox">
-            <input type="checkbox">
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-        <div data-link="details.html" class="card-pf card-pf-view card-pf-view-select card-pf-view-multi-select">
-          <div class="card-pf-body">
-            <div class="card-pf-top-element">
-              <span class="fa fa-birthday-cake card-pf-icon-circle"></span>
-            </div>
-            <h2 class="card-pf-title text-center">
-              Cake Service
-            </h2>
-            <div class="card-pf-items text-center">
-              <div class="card-pf-item">
-                <span class="pficon pficon-screen"></span>
-                <span class="card-pf-item-text">8</span>
-              </div>
-              <div class="card-pf-item">
-                <span class="fa fa-check"></span>
-              </div>
-            </div>
-            <p class="card-pf-info text-center"><strong>Created On</strong> 2015-03-01 02:00 AM <br/> Never Expires</p>
-          </div>
-          <div class="card-pf-view-checkbox">
-            <input type="checkbox">
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-        <div data-link="details.html" class="card-pf card-pf-view card-pf-view-select card-pf-view-multi-select">
-          <div class="card-pf-body">
-            <div class="card-pf-top-element">
-              <span class="fa fa-birthday-cake card-pf-icon-circle"></span>
-            </div>
-            <h2 class="card-pf-title text-center">
-              Cake Service
-            </h2>
-            <div class="card-pf-items text-center">
-              <div class="card-pf-item">
-                <span class="pficon pficon-screen"></span>
-                <span class="card-pf-item-text">8</span>
-              </div>
-              <div class="card-pf-item">
-                <span class="fa fa-check"></span>
-              </div>
-            </div>
-            <p class="card-pf-info text-center"><strong>Created On</strong> 2015-03-01 02:00 AM <br/> Never Expires</p>
-          </div>
-          <div class="card-pf-view-checkbox">
-            <input type="checkbox">
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-        <div data-link="details.html" class="card-pf card-pf-view card-pf-view-select card-pf-view-multi-select">
-          <div class="card-pf-body">
-            <div class="card-pf-top-element">
-              <span class="fa fa-birthday-cake card-pf-icon-circle"></span>
-            </div>
-            <h2 class="card-pf-title text-center">
-              Cake Service
-            </h2>
-            <div class="card-pf-items text-center">
-              <div class="card-pf-item">
-                <span class="pficon pficon-screen"></span>
-                <span class="card-pf-item-text">8</span>
-              </div>
-              <div class="card-pf-item">
-                <span class="fa fa-check"></span>
-              </div>
-            </div>
-            <p class="card-pf-info text-center"><strong>Created On</strong> 2015-03-01 02:00 AM <br/> Never Expires</p>
-          </div>
-          <div class="card-pf-view-checkbox">
-            <input type="checkbox">
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-        <div data-link="details.html" class="card-pf card-pf-view card-pf-view-select card-pf-view-multi-select">
-          <div class="card-pf-body">
-            <div class="card-pf-top-element">
-              <span class="fa fa-birthday-cake card-pf-icon-circle"></span>
-            </div>
-            <h2 class="card-pf-title text-center">
-              Cake Service
-            </h2>
-            <div class="card-pf-items text-center">
-              <div class="card-pf-item">
-                <span class="pficon pficon-screen"></span>
-                <span class="card-pf-item-text">8</span>
-              </div>
-              <div class="card-pf-item">
-                <span class="fa fa-check"></span>
-              </div>
-            </div>
-            <p class="card-pf-info text-center"><strong>Created On</strong> 2015-03-01 02:00 AM <br/> Never Expires</p>
-          </div>
-          <div class="card-pf-view-checkbox">
-            <input type="checkbox">
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-        <div data-link="details.html" class="card-pf card-pf-view card-pf-view-select card-pf-view-multi-select">
-          <div class="card-pf-body">
-            <div class="card-pf-top-element">
-              <span class="fa fa-birthday-cake card-pf-icon-circle"></span>
-            </div>
-            <h2 class="card-pf-title text-center">
-              Cake Service
-            </h2>
-            <div class="card-pf-items text-center">
-              <div class="card-pf-item">
-                <span class="pficon pficon-screen"></span>
-                <span class="card-pf-item-text">8</span>
-              </div>
-              <div class="card-pf-item">
-                <span class="fa fa-check"></span>
-              </div>
-            </div>
-            <p class="card-pf-info text-center"><strong>Created On</strong> 2015-03-01 02:00 AM <br/> Never Expires</p>
-          </div>
-          <div class="card-pf-view-checkbox">
-            <input type="checkbox">
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-        <div data-link="details.html" class="card-pf card-pf-view card-pf-view-select card-pf-view-multi-select">
-          <div class="card-pf-body">
-            <div class="card-pf-top-element">
-              <span class="fa fa-birthday-cake card-pf-icon-circle"></span>
-            </div>
-            <h2 class="card-pf-title text-center">
-              Cake Service
-            </h2>
-            <div class="card-pf-items text-center">
-              <div class="card-pf-item">
-                <span class="pficon pficon-screen"></span>
-                <span class="card-pf-item-text">8</span>
-              </div>
-              <div class="card-pf-item">
-                <span class="fa fa-check"></span>
-              </div>
-            </div>
-            <p class="card-pf-info text-center"><strong>Created On</strong> 2015-03-01 02:00 AM <br/> Never Expires</p>
-          </div>
-          <div class="card-pf-view-checkbox">
-            <input type="checkbox">
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-        <div data-link="details.html" class="card-pf card-pf-view card-pf-view-select card-pf-view-multi-select">
-          <div class="card-pf-body">
-            <div class="card-pf-top-element">
-              <span class="fa fa-birthday-cake card-pf-icon-circle"></span>
-            </div>
-            <h2 class="card-pf-title text-center">
-              Cake Service
-            </h2>
-            <div class="card-pf-items text-center">
-              <div class="card-pf-item">
-                <span class="pficon pficon-screen"></span>
-                <span class="card-pf-item-text">8</span>
-              </div>
-              <div class="card-pf-item">
-                <span class="fa fa-check"></span>
-              </div>
-            </div>
-            <p class="card-pf-info text-center"><strong>Created On</strong> 2015-03-01 02:00 AM <br/> Never Expires</p>
-          </div>
-          <div class="card-pf-view-checkbox">
-            <input type="checkbox">
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-        <div data-link="details.html" class="card-pf card-pf-view card-pf-view-select card-pf-view-multi-select">
-          <div class="card-pf-body">
-            <div class="card-pf-top-element">
-              <span class="fa fa-birthday-cake card-pf-icon-circle"></span>
-            </div>
-            <h2 class="card-pf-title text-center">
-              Cake Service
-            </h2>
-            <div class="card-pf-items text-center">
-              <div class="card-pf-item">
-                <span class="pficon pficon-screen"></span>
-                <span class="card-pf-item-text">8</span>
-              </div>
-              <div class="card-pf-item">
-                <span class="fa fa-check"></span>
-              </div>
-            </div>
-            <p class="card-pf-info text-center"><strong>Created On</strong> 2015-03-01 02:00 AM <br/> Never Expires</p>
-          </div>
-          <div class="card-pf-view-checkbox">
-            <input type="checkbox">
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-        <div data-link="details.html" class="card-pf card-pf-view card-pf-view-select card-pf-view-multi-select">
-          <div class="card-pf-body">
-            <div class="card-pf-top-element">
-              <span class="fa fa-birthday-cake card-pf-icon-circle"></span>
-            </div>
-            <h2 class="card-pf-title text-center">
-              Cake Service
-            </h2>
-            <div class="card-pf-items text-center">
-              <div class="card-pf-item">
-                <span class="pficon pficon-screen"></span>
-                <span class="card-pf-item-text">8</span>
-              </div>
-              <div class="card-pf-item">
-                <span class="fa fa-check"></span>
-              </div>
-            </div>
-            <p class="card-pf-info text-center"><strong>Created On</strong> 2015-03-01 02:00 AM <br/> Never Expires</p>
-          </div>
-          <div class="card-pf-view-checkbox">
-            <input type="checkbox">
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-        <div data-link="details.html" class="card-pf card-pf-view card-pf-view-select card-pf-view-multi-select">
-          <div class="card-pf-body">
-            <div class="card-pf-top-element">
-              <span class="fa fa-birthday-cake card-pf-icon-circle"></span>
-            </div>
-            <h2 class="card-pf-title text-center">
-              Cake Service
-            </h2>
-            <div class="card-pf-items text-center">
-              <div class="card-pf-item">
-                <span class="pficon pficon-screen"></span>
-                <span class="card-pf-item-text">8</span>
-              </div>
-              <div class="card-pf-item">
-                <span class="fa fa-check"></span>
-              </div>
-            </div>
-            <p class="card-pf-info text-center"><strong>Created On</strong> 2015-03-01 02:00 AM <br/> Never Expires</p>
-          </div>
-          <div class="card-pf-view-checkbox">
-            <input type="checkbox">
-          </div>
-        </div>
-      </div>
+
+
     </div>
   </div>
   <script>
