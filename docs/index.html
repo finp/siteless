@@ -13,75 +13,157 @@
     <script src="./asciidoctor.js"></script>  
     <link rel="stylesheet" href="index.css">
   </head>
-  <body>
+  <body class="cards-pf">
 
-<!-- nav -->
-<nav class="navbar navbar-default navbar-pf" role="navigation">
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-1">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="index.html">
-      Arotna - Asciidoc Websites
-    </a>
-  </div>
-  <div class="collapse navbar-collapse navbar-collapse-1">
+  <!-- nav -->
+  <nav class="navbar navbar-default navbar-pf" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="render.html">
+        Arotna - Asciidoc Websites
+      </a>
+    </div>
+    <div class="collapse navbar-collapse navbar-collapse-1">
+  
+      <ul class="nav navbar-nav navbar-primary">
+        <li>
+          <a href="render.html?e=assembly_about.adoc">About Arotna</a>
+        </li>
+        <li>
+          <a href="render.html?e=assembly_using.adoc">Using Arotna</a>
+        </li>
+        <li>
+          <a href="render.html?e=assembly_reference.adoc">Reference</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+<div class="container-fluid container-cards-pf">
+  <div class="row row-cards-pf">
 
-    <ul class="nav navbar-nav navbar-primary">
-      <li>
-        <a href="index.html?e=assembly_about.adoc">About Arotna</a>
-      </li>
-      <li>
-        <a href="index.html?e=assembly_using.adoc">Using Arotna</a>
-      </li>
-      <li>
-        <a href="index.html?e=assembly_reference.adoc">Reference</a>
-      </li>
-    </ul>
-  </div>
-</nav>
 
-<div class="container-fluid">
-
-    <div class="row">
-      <div id="target" class="col-md-12">
-
-          
-          <script>
-         
-            var asciidoctor = Asciidoctor();
-            var content = "include::index.adoc[leveloffset=+1]";
-      
-      
-             const html0 = asciidoctor.convert(content,{safe: 'server', attributes: {PRODUCT: 'BMX'}});      
-             document.getElementById('target').innerHTML = html0;
-      
-      
-            var fname = (location.search.match(/e=(.*)/)[1]);
-           
-      
-              var content = "include::"+ fname + "[leveloffset=+1]";
+      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+        <div data-link="render.html?e=arotna.adoc" class="card-pf card-pf-view card-pf-view-select card-pf-view-multi-select">
+          <div class="card-pf-body">
+            <div id="target0">         
+              <script>
              
-      
-          const jsonObj = asciidoctor.load(content,{safe: 'server', attributes: {PRODUCT: 'BMX'}});      
-          console.log(jsonObj);
-          const html = asciidoctor.convert(content,{safe: 'server', attributes: {PRODUCT: 'BMX'}});      
-            document.getElementById('target').innerHTML = html;
-      
-      </script>
-      
-      
+                var asciidoctor = Asciidoctor();
+                var content = "include::arotna.adoc[leveloffset=+2, tags=card]";
+          
+          
+                 const html0 = asciidoctor.convert(content,{safe: 'server', attributes: {PRODUCT: 'BMX'}});      
+                 document.getElementById('target0').innerHTML = html0;
+                    
+          </script>
+            </div>
+            <a href="render.html?e=arotna.adoc">more...</a>
+          
+          </div>
         </div>
-
       </div>
 
 
+
+
+      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+        <div data-link="render.html?e=assembly_using.adoc" class="card-pf card-pf-view card-pf-view-select card-pf-view-multi-select">
+          <div class="card-pf-body">
+            
+            <div id="target1">          
+              <script>
+             
+                var asciidoctor = Asciidoctor();
+                var content = "include::assembly_about.adoc[leveloffset=+2, tags=card]";
+          
+          
+                 const html1 = asciidoctor.convert(content,{safe: 'server', attributes: {PRODUCT: 'BMX'}});      
+                 document.getElementById('target1').innerHTML = html1;
+                    
+          </script>
+            </div>
+            <a href="render.html?e=assembly_about.adoc">more...</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+        <div data-link="render.html?e=assembly_about.adoc" class="card-pf card-pf-view card-pf-view-select card-pf-view-multi-select">
+          <div class="card-pf-body">
+        
+            <div id="target2">          
+              <script>
+             
+                var asciidoctor = Asciidoctor();
+                var content = "include::assembly_using.adoc[leveloffset=+2, tags=card]";
+          
+          
+                 const html2 = asciidoctor.convert(content,{safe: 'server', attributes: {PRODUCT: 'BMX'}});      
+                 document.getElementById('target2').innerHTML = html2;
+                    
+          </script>
+            </div>
+            <a href="render.html?e=assembly_using.adoc">more...</a>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+        <div data-link="render.html?e=assembly_reference.adoc" class="card-pf card-pf-view card-pf-view-select card-pf-view-multi-select">
+          <div class="card-pf-body">
+            
+            <div id="target3">          
+              <script>
+             
+                var asciidoctor = Asciidoctor();
+                var content = "include::assembly_reference.adoc[leveloffset=+2, tags=card]";
+          
+          
+                 const html3 = asciidoctor.convert(content,{safe: 'server', attributes: {PRODUCT: 'BMX'}});      
+                 document.getElementById('target3').innerHTML = html3;
+                    
+          </script>
+            </div>
+            <a href="render.html?e=assembly_reference.adoc">more...</a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
-</div><!-- container -->
+  <script>
+    $(function() {
+      // matchHeight the contents of each .card-pf and then the .card-pf itself
+      $(".row-cards-pf > [class*='col'] > .card-pf > .card-pf-body").matchHeight();
+    });
+    $(document).ready(function() {
+      // Card Multi Select
+      $('input[type=checkbox]').click(function() {
+        if ($(this).parent().parent().hasClass('active'))
+        { $(this).parent().parent().removeClass('active'); }
+        else
+        { $(this).parent().parent().addClass('active'); }
+      });
 
+      // Card navigation to contents/details page
+      $(".card-pf").click(function(e){
+        var target = e.target;
+        //check if clicked element is a div, and not <a>, button or input
+        if($(target).is('div')) {
+          window.location = $(this).data("link");
+        }
+      });
 
+    });
+  </script>
   </body>
 </html>

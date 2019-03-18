@@ -1,13 +1,12 @@
 include::attributes.adoc[]
 
-ifdef::context[:parent-context: {context}]
 
 [id='using']
-// If the assembly is reused in other assemblies in a guide, include {context} in the ID: [id='a-collection-of-modules-{context}'].
+// tag::card[]
 = Using arotna
 :context: using
-
 You can use arotna in many ways, think of this of just an introduction to using it.
+// end::card[]
 
 .Prerequisites
 

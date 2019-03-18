@@ -1,6 +1,9 @@
+// tag::card[]
 = Arotna Mindmap
 
 Push adoc to publish
+
+// end::card[]
 
 Arotna doesn't proscribe a method for doing things, but an order to making decisions:
 
