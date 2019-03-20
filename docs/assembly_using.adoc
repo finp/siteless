@@ -3,9 +3,12 @@ include::attributes.adoc[]
 
 [id='using']
 // tag::card[]
+
 = Using arotna
 :context: using
-You can use arotna in many ways, think of this of just an introduction to using it.
+
+You can use Arotna in many ways. Think of this as just a brief introduction to getting started.
+
 // end::card[]
 
 .Prerequisites
