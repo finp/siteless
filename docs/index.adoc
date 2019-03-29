@@ -5,6 +5,10 @@ Antora solves documentation issues relating to versioning and repo complexity, A
 
 You could say Arotna is the opposite to Antora. It just allows you edit and push adoc file to update your GitHub pages website.
 
+.Links
+[%collapsible]
+====
 * link:index.html?e=assembly_about.adoc[About Arotna]
 * link:index.html?e=assembly_using.adoc[Using Arotna]
 * link:index.html?e=assembly_reference.adoc[Reference]
+====
