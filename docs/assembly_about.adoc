@@ -1,11 +1,12 @@
 include::attributes.adoc[]
 
 [id='about-arotna']
+// tag::card[]
 = About Arotna
 :context: about
 
 Arotna helps you write and publish asciidoc documentation with ease.
-
+// end::card[]
 .Prerequisites
 
 * you are familiar with markup languages

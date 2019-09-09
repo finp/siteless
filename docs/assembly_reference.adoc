@@ -1,11 +1,12 @@
 include::attributes.adoc[]
 
 [id='reference']
+// tag::card[]
 = How arotna works
 :context: reference
 
 Arotna is a opininated view of asciidoc writing and publishing, this description is not necessary to use it.
-
+// end::card[]
 Arotna assumes a web server is running an a browser is connected to that web server.
 For each request:
 
